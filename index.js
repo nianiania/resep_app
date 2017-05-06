@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 
 app.route('/')
 	.get(function(req, res){
-		res.sendFile(path.json(__dirname + '/view/home.html'))
+		res.sendFile(path.join(__dirname + '/view/home.html'))
 
 	})
 	.post(function(req, res){
